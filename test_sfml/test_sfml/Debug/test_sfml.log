@@ -1,0 +1,33 @@
+﻿  Main.cpp
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Dot.h(33,70): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Dot.h(33,53): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Main.cpp(49,37): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Main.cpp(49,34): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Main.cpp(58,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Main.cpp(71,19): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\test_sfml\Main.cpp(130,19): warning C4018: '<' : incompatibilité signed/unsigned
+  test_sfml.vcxproj -> C:\Users\Zaleks\Documents\Code\Cpp\test_sfml\Debug\test_sfml.exe
