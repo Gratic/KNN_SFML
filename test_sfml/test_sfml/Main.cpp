@@ -74,6 +74,12 @@ int main()
 	return 0;
 }
 
+/*
+* Name : setDotsColor
+* Param1 : Dictionnary of label, color
+* Param2 : Vector of Dot
+* Description : Affect a color to each dot based on the dot's label.
+*/
 void setDotsColor(std::map <std::string, sf::Color>& _labelColors, std::vector<Dot>& _dots)
 {
 	for (int i(0); i < _dots.size(); i++)
@@ -82,23 +88,33 @@ void setDotsColor(std::map <std::string, sf::Color>& _labelColors, std::vector<D
 	}
 }
 
+/*
+* Name : dominantLabel
+* Param1 : Vector of Dot
+* Description : Return the label of the dominant label (most present one).
+* Return : string
+*/
 std::string dominantLabel(std::vector<Dot>& _dots)
 {
+	// Initialization of the dictionnary
 	std::map<std::string, int> labelCount;
 	for (auto& x : Dot::getAllLabels(_dots))
 	{
 		labelCount[x] = 0;
 	}
 
+	// Counting
 	for (auto& x : _dots)
 	{
 		labelCount[x.getLabel()] ++;
 	}
-
+	
+	// Retrieving the dominant
 	std::string dominant;
 	int maximum = 0;
 	for (auto& x : labelCount)
 	{
+		// Simple max function
 		if (x.second > maximum)
 		{
 			dominant = x.first;
@@ -109,6 +125,11 @@ std::string dominantLabel(std::vector<Dot>& _dots)
 	return dominant;
 }
 
+/*
+* Name : getColors
+* Description : Return a vector of colors.
+* Return : Vector of color
+*/
 std::vector<sf::Color> getColors()
 {
 	std::vector<sf::Color> colors;
@@ -123,8 +144,15 @@ std::vector<sf::Color> getColors()
 	return colors;
 }
 
+/*
+* Name : generateLabelColor
+* Param1 : Vector of Dot
+* Description : Generate a dictionnary of label and color.
+* Return : Dictionnary of label and color.
+*/
 std::map <std::string, sf::Color> generateLabelColor(std::vector<Dot> _dots)
 {
+	// Retrieve all different labels
 	std::vector<std::string> labels = Dot::getAllLabels(_dots);
 	std::vector<sf::Color> colors = getColors();
 
@@ -133,7 +161,8 @@ std::map <std::string, sf::Color> generateLabelColor(std::vector<Dot> _dots)
 	{
 		std::cout << labels[i] << std::endl;
 	}*/
-
+	
+	// Affect each label a color
 	std::map <std::string, sf::Color> labelColors;
 	for (int i(0); i < labels.size(); i++)
 	{
