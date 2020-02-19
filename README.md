@@ -15,3 +15,8 @@ Implemented in C++ with the multimedia library SFML 2.5.1 (https://www.sfml-dev.
 1. Dynamically add point with label.
 2. Change the position of a point.
 3. Optimization ?
+
+# What I want this project to be
+I want to redo this project to be a guided tour for the knn algorithm, explaining how it's working. What are the parameter, how you can optimize it etc.
+
+But I won't do it now.
